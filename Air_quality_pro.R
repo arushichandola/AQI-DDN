@@ -43,11 +43,12 @@ trendLevel(nar, pollutant = "Ozone",  x = "month",
            n.levels = c(10, 10, 4),  limits = c(0, 400),
            cols = "default",  auto.text = TRUE)
 
-windRose(aushi, ws="ws", wd="wd", paddle = "F", type="season")
+windRose(nar, ws="ws", wd="wd", paddle = "F", type="season")
 
 polarPlot(nar, pollutant ="NO2", type="season")
 
 timePlot(nar,pollutant = c("PM2.5","PM10"), avg.time = "day", data.thresh = 0, statistic ="mean",
          smooth = TRUE, y.relation ="free",ylab = " ", key = TRUE,
          name.pol = c("PM2.5", "PM10"), date.breaks = 12)
+
 
